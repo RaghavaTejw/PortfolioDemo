@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body style="background-color:antiquewhite;">
+    <main>
+        <section class="row" aria-labelledby="aspnetTitle">
+            <h1 id="title" style="color:green;">Raghava Teja</h1>
+            <b>Working professional having 1.5 Years of Experience in dotnet technology</b>
+        </section><br />
+        <br />
+        <div class="row">
+            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                <h2 id="gettingStartedTitle">Linkedin Profile</h2>
+                <p>
+                    Navigate to my linkedin profile through below button.
+                </p>
+                <p><a class="btn btn-primary btn-md" href="https://www.linkedin.com/in/raghava-teja-7a9551191/">Linkedin &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="librariesTitle">
+                <h2 id="librariesTitle">Resume</h2>
+                <p>Use below button to download my resume.</p>
+                <p><a class="btn btn-primary btn-md" href="@Url.Action("DownloadFile","Home")">Resume &raquo;</a></p>
+            </section>
+
+        </div>
+    </main>
+</body>
